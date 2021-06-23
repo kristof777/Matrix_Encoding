@@ -273,7 +273,7 @@ while function.lower() not in ["encode", "decode"]:
 
 #Encode:
 if (function.lower() == "encode"):
-    in_string = input("Type your message:\n")
+    in_string = input("Type your message:\n").lower()
 
     #Encode the message with a generated key
     matrix_width = random.randint(matrix_gen.min_size,matrix_gen.max_size)
